@@ -24,6 +24,7 @@ namespace EntityProjectApplication
         public string Name { get; set; }
         public string Surname { get; set; }
         public string City { get; set; }
+        public Nullable<bool> Status { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Sales> Sales { get; set; }

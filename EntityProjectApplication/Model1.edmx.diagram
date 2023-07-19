@@ -12,6 +12,7 @@
         <AssociationConnector Association="EntityProductModel.FK_Product_Category" ManuallyRouted="false" />
         <AssociationConnector Association="EntityProductModel.FK_Sales_Customer" ManuallyRouted="false" />
         <AssociationConnector Association="EntityProductModel.FK_Sales_Product" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="EntityProductModel.Admin" Width="1.5" PointX="5.375" PointY="4.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

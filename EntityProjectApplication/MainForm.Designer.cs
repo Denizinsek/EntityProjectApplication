@@ -61,6 +61,7 @@
             this.BtnStatistics.TabIndex = 2;
             this.BtnStatistics.Text = "Statistics";
             this.BtnStatistics.UseVisualStyleBackColor = true;
+            this.BtnStatistics.Click += new System.EventHandler(this.BtnStatistics_Click);
             // 
             // MainForm
             // 
@@ -71,7 +72,7 @@
             this.Controls.Add(this.BtnPrdctTrns);
             this.Controls.Add(this.BtnCtgrTrns);
             this.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "MainForm";

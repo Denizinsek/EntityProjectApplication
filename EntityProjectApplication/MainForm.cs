@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace EntityProjectApplication
@@ -26,6 +19,12 @@ namespace EntityProjectApplication
         private void BtnPrdctTrns_Click(object sender, EventArgs e)
         {
             ProductForm fr = new ProductForm();
+            fr.Show();
+        }
+
+        private void BtnStatistics_Click(object sender, EventArgs e)
+        {
+            StatisticsForm fr = new StatisticsForm();
             fr.Show();
         }
     }

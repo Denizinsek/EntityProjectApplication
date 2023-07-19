@@ -12,6 +12,8 @@ namespace EntityProjectApplication
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
+    using System.Data.Entity.Core.Objects;
+    using System.Linq;
     
     public partial class EntityProductEntities : DbContext
     {
@@ -29,5 +31,11 @@ namespace EntityProjectApplication
         public virtual DbSet<Customer> Customer { get; set; }
         public virtual DbSet<Product> Product { get; set; }
         public virtual DbSet<Sales> Sales { get; set; }
+        public virtual DbSet<Admin> Admin { get; set; }
+    
+        public virtual ObjectResult<string> BRINGBRAND()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("BRINGBRAND");
+        }
     }
 }
